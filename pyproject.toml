@@ -1,0 +1,48 @@
+[project]
+name = "Project Template"
+version = "0.1.0"
+description = "Project Template"
+authors = ["Rahul Parundekar <rahul@aihero.studio>"]
+license = "MIT"
+readme = "README.md"
+homepage = "https://aihero.studio"
+repository = "https://github.com/ai-hero"
+classifiers = [
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "License :: OSI Approved :: MIT License",
+]
+
+[tool.pytest.ini_options]
+addopts = "-vvv"
+testpaths = "tests"
+
+[tool.black]
+line_length = 120
+target_version = ['py38']
+
+[tool.ruff]
+exclude = [
+    ".venv",
+    ".git",
+    "__pycache__",
+    "build",
+    "dist",
+    "venv",
+]
+ignore = []
+line-length = 120
+select = [
+    "E",
+    "F",
+    "W",
+    "I",
+]
+src = ["src", "tests"]
+
+[mypy]
+files = ["src"]
+strict_optional = false

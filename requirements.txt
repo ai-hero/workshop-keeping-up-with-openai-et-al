@@ -1,0 +1,17 @@
+# For the course
+openai
+
+# for the poc
+jupyter
+
+# sythetic data
+wikipedia
+
+# helpers
+llama-index==0.10.0
+spacy
+tqdm
+ipykernel
+python-dotenv
+datasets
+ragas
