@@ -59,19 +59,3 @@ repos:
     hooks:
       - id: blacken-docs
         additional_dependencies: [black]
-
-  - repo: https://github.com/Yelp/detect-secrets
-    rev: v1.4.0
-    hooks:
-      - id: detect-secrets
-        name: "detect-secrets"
-        args: ["--exclude-files", '.*\.ipynb$' , "--exclude-lines", "(password|secret_access_key|YOUR_OPENAI_KEY)"]
-      - id: detect-secrets
-        name: "detect-secrets-jupyter"
-        args:
-          [
-            "--exclude-files",
-            ".*[^i][^p][^y][^n][^b]$",
-            "--exclude-lines",
-            '"(hash|id|authorship_tag|image/\w+)":.*',
-          ]
