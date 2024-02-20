@@ -14,4 +14,4 @@ tqdm
 ipykernel
 python-dotenv
 datasets
-ragas
+ragas==0.0.22
